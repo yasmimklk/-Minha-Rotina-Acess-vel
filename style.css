@@ -1,0 +1,208 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f6;
+    color: #263238;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Conteúdo */
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #dcebe5;
+    color: #234b3c;
+    text-align: center;
+    padding: 45px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+nav {
+    background-color: #315c4b;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: #315c4b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #315c4b;
+    margin-bottom: 8px;
+}
+
+/* Atividades da rotina */
+.rotina {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.atividade {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    background-color: #e5eee9;
+    padding: 22px;
+    border-left: 6px solid #56836d;
+    border-radius: 8px;
+}
+
+.horario {
+    background-color: #315c4b;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    min-width: 85px;
+    text-align: center;
+}
+
+.atividade p {
+    margin-bottom: 5px;
+}
+
+/* Dicas */
+.lista-dicas {
+    padding-left: 30px;
+    margin-top: 18px;
+}
+
+.lista-dicas li {
+    margin-bottom: 12px;
+}
+
+/* Área de contato e botões */
+.contato {
+    background-color: #e5eee9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #315c4b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 15px 10px 0 0;
+}
+
+.botao:hover {
+    background-color: #234333;
+    text-decoration: underline;
+}
+
+.botao-secundario {
+    background-color: #526b83;
+}
+
+.botao-secundario:hover {
+    background-color: #344c64;
+}
+
+/* Foco para navegação pelo teclado */
+a:focus-visible {
+    outline: 3px solid #d28b24;
+    outline-offset: 4px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #315c4b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .atividade {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 17px;
+    }
+
+    .botao {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+/* Respeita a preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
